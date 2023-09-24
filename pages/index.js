@@ -21,13 +21,13 @@ export default function Home(){
     </Head>
    <div id="allTheComponents" style={{fontFamily:""}}>
     
-    <div className='firstsection' style={{backgroundImage:"url(images/bg12.gif)", backgroundPositionX:"50%", backgroundRepeat:"no-repeat"}}>
+    <div className='firstsection'>
     <ProjectHeader />
     <div className='pb-[10%] grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 px-[5%] lg:mt-[2%] md:mt-[2%] mt-[10%] gap-2'>
-    <div className='grid-cols-1 text-[200%] lg:text-[350%] md:text-[350%] lg:mr-[40%] md:mr-[40%] lg:mt-[3%] md:mt-[3%] font-[600] lg:text-left md:text-left text-center'>
+    <div className='grid-cols-1 text-[200%] lg:text-[350%] md:text-[250%] lg:mr-[40%] md:mr-[40%] lg:mt-[3%] md:mt-[3%] font-[600] lg:text-left md:text-left text-center'>
     Mass adoption of token-governed technologies
     </div>
-    <div className='grid-cols-1 text-[100%] lg:text-[130%] md:text-[130%] lg:ml-[45%] md:ml-[45%] mt-[4%] lg:text-left md:text-left text-center'>
+    <div className='grid-cols-1 text-[100%] lg:text-[130%] md:text-[110%] lg:ml-[45%] md:ml-[45%] mt-[4%] lg:text-left md:text-left text-center'>
     With Quest Labs Network, an Ethereum blockchain based DAO, Quest Labs Treasury and a token holder governed roadmap for
      products and initiatives.
     </div>

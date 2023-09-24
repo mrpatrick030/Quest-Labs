@@ -12,7 +12,7 @@ export default function ProjectHeader(){
       <div id="logo">
         <Link href='/' className='inline-flex items-center'>
         <span className="text-[160%] text-[#fff] font-[600]">
-            <img src="images/logo1.png" width="70" />
+            <img src="images/logo1.png" width="80" />
           </span>
           <span className='text-xl text-white font-bold uppercase tracking-wide text-[90%]'></span>
         </Link>

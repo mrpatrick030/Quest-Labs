@@ -33,6 +33,11 @@ body{background:#000; color:#eee}
  @media screen and (min-width:620px) {
   .firstsectionshadowdiv{box-shadow:3px 3px 4px 1px #002}
  }
+
+ .firstsectionshadowdiv{transition: 1s ease-in-out;}
+ .firstsectionshadowdiv:hover{transform: scale3d(1.05, 1.05, 1.05);}
+ .docsbutton{transition: 1s ease-in-out;}
+ .docsbutton:hover{transform: scale3d(0.9, 0.9, 0.9);}
  
 
 

@@ -1,27 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes navAnimation{0%{transform:translate3D(10%,0,0)} 100%{transform:translate3D(-10%,0,0)}}
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+body{background:#000; color:#eee}
+.headeranchors{transition:1s ease-in-out;}
+.headeranchors:hover{color:#fff;animation:navAnimation 1s alternate infinite; }
+.headeranchorsinnerspan{transition:1s ease-in-out;}
+.headeranchorsinnerspan:hover{transform: scale3d(1.1, 1.1, 1.1);}
+.headeranchors2{transition:1s ease-in-out;}
+.headeranchors2:hover{color:#224;animation:navAnimation 1s alternate infinite }
+#headerbutton:hover{color:#aaa}
+#headerbutton{transform:scale3d(1.4,1.4,1.4)}
+#logo{transition:2s ease-in-out;}
+#logo:hover{transform: scale3d(1.1,1.1,1.1);}
+.headerspans:hover{background: #fff;transform:scale3d(1.1,1.1,1.1)}
+.submitbutton{transition: 1s ease-in-out;}
+.submitbutton:hover{background-color: #224; color: #fff;}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.galleryWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 620px;
+    margin: 0 auto;
   }
-}
+  
+  @media screen and (min-width: 620px){
+    .galleryWrap{max-width: 80%;}
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+ @media screen and (min-width:620px) {
+  .firstsection{background-size: 100%;}
+ }
+
+  

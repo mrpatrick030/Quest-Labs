@@ -5,6 +5,7 @@ import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SecondSection from '@/components/secondsection';
+import ThirdSection from '@/components/thirdsection';
 
 export default function Home(){
   const [buttonColor, setButtonColor] = useState();
@@ -43,6 +44,7 @@ export default function Home(){
     </div>
 
     <SecondSection />
+    <ThirdSection />
   
    </div>
   </>

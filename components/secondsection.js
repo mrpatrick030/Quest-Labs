@@ -4,8 +4,8 @@ import { useState, useEffect } from "react"
 export default function SecondSection() {
     return (
         <div className="p-[5%]">
-        <div className="text-[180%] lg:text-[300%] md:text-[250%] text-center font-[600]">Ecosystem Blog Updates</div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8 mt-[5%]">
+        <div className="text-[180%] lg:text-[300%] md:text-[250%] text-center font-[600] mb-[5%]">Ecosystem Blog Updates</div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8">
             <div className="grid grid-cols-1 col-span-2" data-aos="slide-up" style={{transition:"1s ease-in-out"}}>
            <div className="rounded-xl bg-[#222] p-[5%]" style={{backgroundImage:"url(images/bg15.jpg)", backgroundPositionY:"40%", backgroundPositionX:"30%"}}>
            <img className="mb-[5%]" src="images/logo1.png" width="80"/>

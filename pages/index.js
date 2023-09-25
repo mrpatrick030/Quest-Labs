@@ -7,6 +7,11 @@ import 'aos/dist/aos.css';
 import SecondSection from '@/components/secondsection';
 
 export default function Home(){
+  const [buttonColor, setButtonColor] = useState();
+  const ChangeColor = () => {
+  setButtonColor("#000")
+  } 
+
   useEffect(() => {
     AOS.init();
   }, [])
@@ -31,7 +36,7 @@ export default function Home(){
    <div className='firstsectionshadowdiv p-[0.5cm] bg-[rgba(0,0,0,0.4)]'>With Quest Labs Network, an Ethereum blockchain based DAO, Quest Labs Treasury and a token holder governed roadmap for
      products and initiatives.</div>
      <div className='mt-[10%]'>
-      <button className='docsbutton p-[0.3cm] rounded-md bg-[#002] cursor-pointer' style={{border:"2px solid #fff"}}>View Docs</button>
+      <button onClick={ChangeColor} className='docsbutton p-[0.3cm] rounded-md bg-[#002] cursor-pointer' style={{border:"2px solid #fff", backgroundColor:buttonColor}}>View Docs</button>
     </div>
     </div>
     </div>

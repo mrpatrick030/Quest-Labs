@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function ProjectHeader(){
-  const [active, setActive] = useState(false);
+   const [active, setActive] = useState(false);
 
   const handleClick = () => {
     setActive(!active);
@@ -46,14 +46,13 @@ export default function ProjectHeader(){
         style={{fontSize:"110%", transition:"2s ease-in-out"}}>
            
             <span style={{transition:"1s ease-in-out"}} className="rounded-md">
-            <Link href='/' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'
-             >
+            <Link href='/' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
                <span className="headeranchorsinnerspan">Staking</span>
             </Link>
           </span>
 
           <span style={{transition:"1s ease-in-out"}} className="rounded-md">
-            <Link href='/#about' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors' style={{transition:"1s ease-in-out"}}>
+            <Link href='/#about' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
             <span className="headeranchorsinnerspan">Proposals</span>      
           </Link>
           </span>

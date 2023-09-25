@@ -6,7 +6,7 @@ export default function SecondSection() {
         <div className="p-[5%]">
         <div className="text-[180%] lg:text-[300%] md:text-[250%] text-center font-[600]">Ecosystem Blog Updates</div>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8 mt-[5%]">
-            <div className="grid grid-cols-1 col-span-2">
+            <div className="grid grid-cols-1 col-span-2" data-aos="slide-up" style={{transition:"1s ease-in-out"}}>
            <div className="rounded-xl bg-[#222] p-[5%]" style={{backgroundImage:"url(images/bg15.jpg)", backgroundPositionY:"40%", backgroundPositionX:"30%"}}>
            <img className="mb-[5%]" src="images/logo1.png" width="80"/>
            <div className="text-[150%] lg:text-[250%] md:text-[200%] lg:mr-[20%] md:mr-[10%] mb-[5%]">
@@ -17,12 +17,12 @@ export default function SecondSection() {
            </div>
             </div>
             <div className="grid grid-cols-1 lg:col-span-1 md:col-span-1 col-span-2">
-                <div className="p-[5%] bg-[#111] rounded-xl">
+                <div className="p-[5%] bg-[#111] rounded-xl" data-aos="slide-up" style={{transition:"1s ease-in-out"}}>
                     <div className="text-[120%] lg:text-[150%] md:text-[140%] font-[600] mb-[3%]">MigratorV2 Now Live</div>
                     <div className="mb-[10%]">Navigate $USDT to $QUEST migration easily with MigratorV2.</div>
                     <div className="mb-[5%]"><span className="rounded-md p-[0.2cm] cursor-pointer" style={{border:"2px solid #fff"}}><Link href="https://medium.com">Migrate Now</Link></span></div>
                 </div>
-                <div className="p-[5%] bg-[#111] rounded-xl mt-[5%]">
+                <div className="p-[5%] bg-[#111] rounded-xl mt-[5%]" data-aos="slide-up" style={{transition:"1s ease-in-out"}}>
                     <div className="text-[120%] lg:text-[150%] md:text-[140%] font-[600] mb-[3%]">MIP-27: $USDT to $QUEST Migration</div>
                     <div className="mb-[10%]">Proposal for the clarification of $USDT to $QUEST migration policy and service has passed.</div>
                     <div className="mb-[5%]"><span className="rounded-md p-[0.2cm] cursor-pointer" style={{border:"2px solid #fff"}}><Link href="https://medium.com">Read More</Link></span></div>

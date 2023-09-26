@@ -14,7 +14,7 @@ export default function ThirdSection() {
             <div className="bg-[rgba(0,0,0,0.9)] p-[5%]" style={{boxShadow:"5px 5px 2px 2px #000"}}>
             <div className="lg:text-[150%] md:text-[120%] text-[110%] font-[600]">Hyperscale Performance</div>
             <div className="lg:mr-[25%] md:mr-[20%] lg:text-[125%] md:text-[120%] text-[110%] mt-[3%]">Low fees and faster finality — achieved by combining roll-up technology with a decentralized data 
-            availability layer (Mantle DA powered by EigenDA technology).</div>
+            availability layer (Quest Labs powered by Ethereum technology).</div>
             </div>
         </div>
         <div className="grid grid-cols-1" data-aos="zoom-in" style={{transition:"1s ease-in-out"}}>

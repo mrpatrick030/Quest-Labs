@@ -14,7 +14,7 @@ export default function FifthSection() {
         proposals and voting by $QUEST token holders. An amount of$QUEST is staked to receive the Quest Labs 
         NFT which members of the ecosystem utilize in making decisions and proposals. 
         </div>
-        <div className="mt-[5%]"><span className="p-[0.3cm] bg-[rgba(0,0,0,1)] rounded-md"><Link href="https://ayalab.xyz">Forum Discussion</Link></span> &nbsp; &nbsp; <span className="p-[0.3cm] bg-[rgba(0,0,0,1)] rounded-md"><Link href="https://thequestlabs.vercel.app/proposals">Visit Governance Page</Link></span></div>
+        <div className="mt-[5%]"><span className="p-[0.3cm] bg-[rgba(0,0,0,1)] rounded-md"><Link href="https://ayalab.xyz">Forum Discussion</Link></span> &nbsp; &nbsp; <span className="p-[0.3cm] bg-[rgba(0,0,0,1)] rounded-md"><Link href="https://thequestlabs.vercel.app/proposals">Governance</Link></span></div>
         </div>
         <div className="grid grid-cols-1 px-[5%] py-[10%] rounded-xl bg-[#065]" data-aos="flip-down" style={{border:"2px solid #fff", transition:"1s ease-in-out"}}>
         <div className="m-[auto]"><img src="images/wallet.png" width="70"/></div>

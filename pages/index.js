@@ -8,6 +8,7 @@ import SecondSection from '@/components/secondsection';
 import ThirdSection from '@/components/thirdsection';
 import FourthSection from '@/components/fourthsection';
 import FifthSection from '@/components/fifthsection';
+import SixthSection from '@/components/sixthsection';
 
 export default function Home(){
   const [buttonColor, setButtonColor] = useState();
@@ -49,6 +50,7 @@ export default function Home(){
     <ThirdSection />
     <FourthSection />
     <FifthSection />
+    <SixthSection />
   
    </div>
   </>

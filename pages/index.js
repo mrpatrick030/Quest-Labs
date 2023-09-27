@@ -10,6 +10,7 @@ import FourthSection from '@/components/fourthsection';
 import FifthSection from '@/components/fifthsection';
 import SixthSection from '@/components/sixthsection';
 import SeventhSection from '@/components/seventhsection';
+import Footer from '@/components/footer';
 
 export default function Home(){
   const [buttonColor, setButtonColor] = useState();
@@ -53,6 +54,7 @@ export default function Home(){
     <FifthSection />
     <SixthSection />
     <SeventhSection />
+    <Footer />
   
    </div>
   </>

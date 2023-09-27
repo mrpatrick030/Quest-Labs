@@ -60,7 +60,7 @@ export default function SixthSection() {
  return (
     <div className="p-[5%]">
         <div className="text-[180%] lg:text-[300%] md:text-[250%] text-center font-[600] mb-[5%]">Live Market Data</div>
-        <div className="m-[auto]" style={{border:"2px solid #fff"}}>
+        <div data-aos="fade-down" className="m-[auto]" style={{border:"2px solid #fff", transition:"1s ease-in-out"}}>
             <Helmet>
             <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async></script>
             </Helmet>

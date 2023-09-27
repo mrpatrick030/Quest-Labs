@@ -7,7 +7,7 @@ export default function SecondSection() {
         <div className="text-[180%] lg:text-[300%] md:text-[250%] text-center font-[600] mb-[5%]">Ecosystem Blog Updates</div>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8">
             <div className="grid grid-cols-1 col-span-2" data-aos="slide-up" style={{transition:"1s ease-in-out"}}>
-           <div className="rounded-xl bg-[#222] p-[5%]" style={{backgroundImage:"url(images/bg15.jpg)", backgroundPositionY:"40%", backgroundPositionX:"30%"}}>
+           <div className="rounded-xl bg-[#222] p-[5%]" style={{backgroundImage:"url(images/bg15.jpg)", backgroundSize:"100%", backgroundPositionY:"40%", backgroundPositionX:"30%"}}>
            <img className="mb-[5%]" src="images/logo1.png" width="80"/>
            <div className="text-[150%] lg:text-[250%] md:text-[200%] lg:mr-[20%] md:mr-[10%] mb-[5%]">
             Mantle Journey 20M $QUEST Reward Pool

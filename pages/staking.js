@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Staking() {
     const [buyquest, setbuyquest] = useState({
@@ -17,6 +19,10 @@ export default function Staking() {
     const handleInput2 = (event) => {
         setstakequest((prev) => ({...prev, [event.target.name]: [event.target.value]}))
     }
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
 
     return (
         <>

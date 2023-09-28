@@ -64,13 +64,13 @@ export default function ProjectHeader(){
             </span>
 
             <span style={{transition:"1s ease-in-out"}} className="rounded-md">
-            <Link href='/#portfolio' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
+            <Link href='/profile' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
               <span className="headeranchorsinnerspan">Profile</span>
             </Link>
             </span>
           
             <span style={{transition:"1s ease-in-out"}} className="rounded-md">
-            <Link href='/#portfolio' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
+            <Link href='/portfolio' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
               <span className="headeranchorsinnerspan">Governance</span>
             </Link>
             </span>

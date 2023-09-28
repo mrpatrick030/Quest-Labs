@@ -34,7 +34,7 @@ export default function Profile() {
                 </div>
                 <div className="grid grid-cols-1">
                     <div className="lg:text-[200%] md:text-[180%] text-[150%] font-[600] text-[#d7b644]"><i className="fa fa-info-circle"></i> &nbsp; Age</div>
-                    <div className="text-[#ddd] lg:text-[150%] md:text-[130%] text-[120%] mt-[1%] font-[500]">21</div>
+                    <div className="text-[#ddd] lg:text-[150%] md:text-[130%] text-[120%] mt-[1%] font-[500]">18</div>
                 </div>
                 <div className="grid grid-cols-1">
                     <div className="lg:text-[200%] md:text-[180%] text-[150%] font-[600] text-[#d7b644]"><i className="fa fa-id-badge"></i> &nbsp; User ID</div>
@@ -43,8 +43,14 @@ export default function Profile() {
             </div>
             <div className="mt-[5%] lg:text-[200%] md:text-[180%] text-[150%] font-[600] text-[#d7b644]"><i className="fa fa-pencil-square"></i> &nbsp; Bio</div>
             <div className="text-[#ddd] lg:text-[150%] md:text-[130%] text-[120%] mt-[1%] font-[500]">I am a full stack web and blockchain developer</div>
+
+            <div className="mt-[5%]" style={{borderBottom:"2px ridge #d7b644"}}></div>
+            <div className="mt-[5%] p-[5%]" data-aos="fade-in" style={{border:"2px solid #fff", transition:"1s ease-in-out"}}>
+                <div className="lg:text-[150%] md:text-[130%] text-[110%] mb-[5%] text-center">Your items will display here if available!</div>
+                <div className="">{}</div>
+            </div>
         </div>
-        <div className="w-[80%] m-[auto]" style={{borderBottom:"2px solid #fff"}}></div>
+       
         <Footer />
         </div>
         </>

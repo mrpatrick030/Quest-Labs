@@ -46,7 +46,7 @@ export default function ProjectHeader(){
         style={{fontSize:"110%", transition:"2s ease-in-out"}}>
            
             <span style={{transition:"1s ease-in-out"}} className="rounded-md">
-            <Link href='/' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
+            <Link href='/staking' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
                <span className="headeranchorsinnerspan">Staking</span>
             </Link>
           </span>

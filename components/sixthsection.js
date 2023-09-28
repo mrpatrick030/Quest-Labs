@@ -66,7 +66,7 @@ export default function SixthSection() {
             </Helmet>
         <div id="tradingview-container"></div>
         </div>
-        <div className="mt-[5%] text-center"><Link href="https://thequestlabs.vercel.app/staking"><div className="px-[0.5cm] py-[0.3cm] bg-[rgba(0,200,0,0.1)] rounded-md lg:text-[110%] md:text-[105%]">Proceed to Staking Page</div></Link></div>
+        <div className="mt-[5%] text-center"><Link href="/staking"><div className="px-[0.5cm] py-[0.3cm] bg-[rgba(0,200,0,0.1)] rounded-md lg:text-[110%] md:text-[105%]">Proceed to Staking Page</div></Link></div>
     </div>
  )
 }

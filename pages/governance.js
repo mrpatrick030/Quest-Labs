@@ -22,8 +22,9 @@ export default function Profile() {
         <div className="p-[5%] bg-[#234]">
         <div>
         <div><Link className="lg:text-[140%] md:text-[130%] text-[120%] font-[500]" href="/"><i className="fa fa-caret-left"></i> &nbsp; <span style={{textShadow:"2px 2px #000"}}>RETURN</span></Link> <span className="bg-[#00c] px-[0.5cm] py-[0.2cm] font-[500] rounded-md float-right">Connect Wallet</span></div>
-       </div>
-       <div className="mt-[10%]">join dao, create proposal, vote for a proposal, all the proposals</div>
+        <div className="mt-[1cm]" style={{borderBottom:"2px solid #d7b644"}}></div>
+        </div>
+       <div className="mt-[10%]">join dao, create a new proposal, vote for a proposal, all the proposals</div>
         Other things like number of members in DAO will be written above as a separate div.
        </div>
         </>

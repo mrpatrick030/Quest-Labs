@@ -14,7 +14,7 @@ export default function VoteForProposal() {
     return (
         <div id="voteforaproposal" className="p-[5%]">
         <div className="text-center mt-[2%]"><span className="lg:text-[140%] md:text-[130%] text-[110%] text-[#fff] font-[500]">Vote for a Proposal</span></div>
-        <div className="mt-[5%] lg:mx-[10%] md:mx-[5%] p-[5%]" data-aos="zoom-in" style={{transition:"1s ease-in-out"}}>
+        <div className="mt-[5%] lg:mx-[10%] md:mx-[5%]" data-aos="zoom-in" style={{transition:"1s ease-in-out"}}>
         <form>
         <div>
         <label className="bg-[rgba(0,0,0,0.8)] px-[0.4cm] py-[0.2cm] rounded-md" style={{}}>Proposal ID</label>

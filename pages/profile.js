@@ -29,19 +29,19 @@ export default function Profile() {
         <div className="bg-[#234] p-[5%]">
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8">
                 <div className="grid grid-cols-1">
-                    <div className="lg:text-[200%] md:text-[180%] text-[150%] font-[600] text-[#d7b644]"><i className="fa fa-user"></i> &nbsp; Username</div>
+                    <div className="lg:text-[200%] md:text-[180%] text-[130%] font-[600] text-[#d7b644]"><i className="fa fa-user"></i> &nbsp; Username</div>
                     <div className="text-[#ddd] lg:text-[150%] md:text-[130%] text-[120%] mt-[1%] font-[500]">Pato</div>
                 </div>
                 <div className="grid grid-cols-1">
-                    <div className="lg:text-[200%] md:text-[180%] text-[150%] font-[600] text-[#d7b644]"><i className="fa fa-info-circle"></i> &nbsp; Age</div>
+                    <div className="lg:text-[200%] md:text-[180%] text-[130%] font-[600] text-[#d7b644]"><i className="fa fa-info-circle"></i> &nbsp; Age</div>
                     <div className="text-[#ddd] lg:text-[150%] md:text-[130%] text-[120%] mt-[1%] font-[500]">18</div>
                 </div>
                 <div className="grid grid-cols-1">
-                    <div className="lg:text-[200%] md:text-[180%] text-[150%] font-[600] text-[#d7b644]"><i className="fa fa-id-badge"></i> &nbsp; User ID</div>
+                    <div className="lg:text-[200%] md:text-[180%] text-[130%] font-[600] text-[#d7b644]"><i className="fa fa-id-badge"></i> &nbsp; User ID</div>
                     <div className="text-[#ddd] lg:text-[150%] md:text-[130%] text-[120%] mt-[1%] font-[500]">2</div>
                 </div>
             </div>
-            <div className="mt-[5%] lg:text-[200%] md:text-[180%] text-[150%] font-[600] text-[#d7b644]"><i className="fa fa-pencil-square"></i> &nbsp; Bio</div>
+            <div className="mt-[5%] lg:text-[200%] md:text-[180%] text-[130%] font-[600] text-[#d7b644]"><i className="fa fa-pencil-square"></i> &nbsp; Bio</div>
             <div className="text-[#ddd] lg:text-[150%] md:text-[130%] text-[120%] mt-[1%] font-[500]">I am a full stack web and blockchain developer</div>
 
             <div className="mt-[5%]" style={{borderBottom:"2px ridge #d7b644"}}></div>

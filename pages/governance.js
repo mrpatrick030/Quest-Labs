@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import JoinDao from "@/components/joindao";
 import VoteForProposal from "@/components/voteforaproposal";
 import CreateProposal from "@/components/createaproposal";
+import Proposals from "@/components/proposals";
 
 export default function Profile() {
    const [renderComponent, setRenderedComponent] = useState("joindaodisplaycomponent")
@@ -37,7 +38,7 @@ export default function Profile() {
             <img src="images/logo1.png" width="60" />
             <div className="lg:text-[140%] md:text-[140%] text-[120%] mt-[5%] font-[500]">Quest Labs DAO &nbsp; <i className="fa fa-check-circle"></i></div>
             <div className="mt-[0.7cm]"><Link href="#joindao"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("joindaodisplaycomponent")}>Join DAO</span></Link></div>
-            <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("proposalsdisplaycomponent")}>Proposals</span></div>
+            <div className="mt-[0.6cm]"><Link href="#proposals"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("proposalsdisplaycomponent")}>Proposals</span></Link></div>
             <div className="mt-[0.6cm]"><Link href="#voteforaproposal"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("voteforproposaldisplaycomponent")}>Vote for a Proposal</span></Link></div>
             <div className="mt-[0.6cm]"><Link href="#createaproposal"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("createaproposaldisplaycomponent")}>Create a New Proposal</span></Link></div>
             </div>
@@ -47,10 +48,9 @@ export default function Profile() {
         <div className="bg-[rgba(0,0,0,0.5)] rounded-xl">
            
          {renderComponent === "joindaodisplaycomponent" && <JoinDao />}
-         {renderComponent === "proposalsdisplaycomponent" && <div>here</div>}
+         {renderComponent === "proposalsdisplaycomponent" && <Proposals />}
          {renderComponent === "voteforproposaldisplaycomponent" && <VoteForProposal />}
          {renderComponent === "createaproposaldisplaycomponent" && <CreateProposal />}
-
          
         </div>
         </div>

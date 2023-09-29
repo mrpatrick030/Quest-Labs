@@ -24,6 +24,28 @@ export default function Profile() {
         <div><Link className="lg:text-[140%] md:text-[130%] text-[120%] font-[500]" href="/"><i className="fa fa-caret-left"></i> &nbsp; <span style={{textShadow:"2px 2px #000"}}>RETURN</span></Link> <span className="bg-[#00c] px-[0.5cm] py-[0.2cm] font-[500] rounded-md float-right">Connect Wallet</span></div>
         <div className="mt-[1cm]" style={{borderBottom:"2px solid #d7b644"}}></div>
         </div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8 mt-[1.5cm]">
+        <div className="grid-cols-1 lg:col-span-1 md:col-span-2 col-span-3">
+            <div className="p-[8%] lg:mr-[10%] bg-[rgba(0,0,0,0.5)] rounded-xl">
+            <img src="images/logo1.png" width="60" />
+            <div className="lg:text-[140%] md:text-[140%] text-[120%] mt-[5%] font-[500]">Quest Labs DAO &nbsp; <i className="fa fa-check-circle"></i></div>
+            <div className="mt-[0.7cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems">Join DAO</span></div>
+            <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems">Proposals</span></div>
+            <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems">Vote for a Proposal</span></div>
+            <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems">Create a New Proposal</span></div>
+            <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems">About</span></div>
+            </div>
+        </div>
+
+       <div className="grid-cols-1 lg:col-span-2 md:col-span-3 col-span-3">
+        <div className="p-[5%] bg-[rgba(0,0,0,0.5)] rounded-xl">
+            <div className="lg:text-[150%] md:text-[140%] text-[120%] font-[500] text-center text-[#d7b644]" style={{textDecoration:"underline"}}>Become a Member</div>
+        </div>
+        </div>
+       </div>
+
+
+
        <div className="mt-[10%]">join dao, create a new proposal, vote for a proposal, all the proposals</div>
         Other things like number of members in DAO will be written above as a separate div.
        </div>

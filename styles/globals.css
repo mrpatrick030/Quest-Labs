@@ -51,5 +51,8 @@ body{background:#000; color:#eee}
     .questrewarddiv{background-size: 150%;}
  }
 
+ .daomenuitems{transition: 1s ease-in-out;cursor:pointer;}
+ .daomenuitems:hover{background-color: rgba(0,0,0,0.5);}
+
 
   

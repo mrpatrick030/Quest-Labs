@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import JoinDao from "@/components/joindao";
+import VoteForProposal from "@/components/voteforaproposal";
 
 export default function Profile() {
    const [renderComponent, setRenderedComponent] = useState("joindaodisplaycomponent")
@@ -30,24 +31,25 @@ export default function Profile() {
         </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8 mt-[1.5cm]">
-        <div className="grid-cols-1 lg:col-span-1 md:col-span-2 col-span-3" data-aos="zoom-out" style={{transition:"1s ease-in-out"}}>
+        <div className="grid-cols-1 lg:col-span-1 md:col-span-2 col-span-3" style={{transition:"1s ease-in-out"}}>
             <div className="p-[8%] lg:mr-[10%] bg-[rgba(0,0,0,0.5)] rounded-xl">
             <img src="images/logo1.png" width="60" />
             <div className="lg:text-[140%] md:text-[140%] text-[120%] mt-[5%] font-[500]">Quest Labs DAO &nbsp; <i className="fa fa-check-circle"></i></div>
-            <div className="mt-[0.7cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("joindaodisplaycomponent")}>Join DAO</span></div>
+            <div className="mt-[0.7cm]"><Link href="#joindao"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("joindaodisplaycomponent")}>Join DAO</span></Link></div>
             <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("proposalsdisplaycomponent")}>Proposals</span></div>
-            <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems">Vote for a Proposal</span></div>
+            <div className="mt-[0.6cm]"><Link href="#voteforaproposal"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("voteforproposaldisplaycomponent")}>Vote for a Proposal</span></Link></div>
             <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems">Create a New Proposal</span></div>
             <div className="mt-[0.6cm]"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems">About</span></div>
             </div>
         </div>
 
-       <div className="grid-cols-1 lg:col-span-2 md:col-span-3 col-span-3" data-aos="zoom-out" style={{transition:"1s ease-in-out"}}>
-        <div className="p-[5%] bg-[rgba(0,0,0,0.5)] rounded-xl">
+       <div className="grid-cols-1 lg:col-span-2 md:col-span-3 col-span-3" style={{transition:"1s ease-in-out"}}>
+        <div className="bg-[rgba(0,0,0,0.5)] rounded-xl">
            
          {renderComponent === "joindaodisplaycomponent" && <JoinDao />}
          {renderComponent === "proposalsdisplaycomponent" && <div>here</div>}
-
+         {renderComponent === "voteforproposaldisplaycomponent" && <VoteForProposal />}
+         
         </div>
         </div>
        </div>

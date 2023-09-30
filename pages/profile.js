@@ -16,10 +16,7 @@ export default function Profile() {
    <Head>
    <title>USER PROFILE</title>
    <link rel="shortcut icon" href="/favicon.ico" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />;
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/svg-with-js.min.css" />;
-   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    </Head>
+   </Head>
         <div>
         <div className="p-[5%] profilebackground" style={{backgroundImage:"url(images/bg3.jpg)", backgroundSize:"100%", backgroundPositionY:"90%"}}>
         <div className="lg:text-[140%] md:text-[130%] text-[120%] font-[500]"><Link href="/"><i className="fa fa-caret-left"></i> &nbsp; <span style={{textShadow:"2px 2px #000"}}>RETURN</span></Link></div>

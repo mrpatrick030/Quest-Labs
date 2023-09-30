@@ -14,6 +14,7 @@
     "aos": "^2.3.4",
     "autoprefixer": "10.4.16",
     "axios": "^1.4.0",
+    "babel": "^6.23.0",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.6",

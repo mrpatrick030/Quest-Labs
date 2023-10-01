@@ -11,7 +11,7 @@ export default function FifthSection() {
         <div className="lg:text-[120%] md:text-[110%] text-[105%] mt-[5%]">
         All decisions, from launching new initiatives, to transferring and recalling treasury resources, 
         assigning and modifying powers to operating teams, and implementing corrective actions, are subject to 
-        proposals and voting by $QUEST token holders. An amount of$QUEST is staked to receive the Quest Labs 
+        proposals and voting by $QTK holders. An amount of $QTK is staked to receive the Quest Labs 
         NFT which members of the ecosystem utilize in making decisions and proposals. 
         </div>
         <div className="mt-[5%]"><span className="p-[0.3cm] bg-[rgba(0,0,0,1)] rounded-md"><Link href="https://ayalab.xyz">Forum Discussion</Link></span> &nbsp; &nbsp; <span className="p-[0.3cm] bg-[rgba(0,0,0,1)] rounded-md"><Link href="/proposals">Governance</Link></span></div>

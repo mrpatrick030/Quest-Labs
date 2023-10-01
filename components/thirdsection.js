@@ -1,7 +1,7 @@
 export default function ThirdSection() {
     return (
         <div className="p-[5%]">
-        <div className="text-[180%] lg:text-[300%] md:text-[250%] text-center font-[600] mb-[5%]">We build $QUEST-powered products on Ethereum</div>
+        <div className="text-[180%] lg:text-[300%] md:text-[250%] text-center font-[600] mb-[5%]">We build $QTK-powered products on Ethereum</div>
         <div className="rounded-xl p-[5%]" style={{backgroundImage:"url(images/bg19.jpg)"}}>
         <div><span className="lg:text-[200%] md:text-[180%] text-[150%] font-[600]">Quest Labs &nbsp; &nbsp;</span><span className="px-[0.3cm] py-[0.1cm] rounded-md bg-[#222]">Mainnet</span></div>
         <div className="mt-[3%] lg:mr-[25%] md:mr-[20%] text-[110%] lg:text-[130%] md:text-[120%]">

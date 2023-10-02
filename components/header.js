@@ -51,21 +51,15 @@ export default function ProjectHeader(){
             </Link>
           </span>
 
-            <span style={{transition:"1s ease-in-out"}} className="rounded-md">
-            <Link href='/profile' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
-              <span className="headeranchorsinnerspan">Profile</span>
-            </Link>
-            </span>
-          
-            <span style={{transition:"1s ease-in-out"}} className="rounded-md">
+          <span style={{transition:"1s ease-in-out"}} className="rounded-md">
             <Link href='/governance' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
               <span className="headeranchorsinnerspan">Governance</span>
             </Link>
             </span>
 
-             <span style={{transition:"1s ease-in-out"}} className="bg-[#002] py-1 rounded-full headerspans">
-            <Link href='/#contact' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-6 py-1 rounded-full text-[eee] items-center justify-center headeranchors2'>
-            <span className="headeranchorsinnerspan">Connect wallet</span>
+            <span style={{transition:"1s ease-in-out"}} className="rounded-md">
+            <Link href='/profile' onClick={handleClick} className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
+              <span className="headeranchorsinnerspan">Profile</span>
             </Link>
             </span>
 

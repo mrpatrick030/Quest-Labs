@@ -9,13 +9,18 @@ export default function Staking() {
     const [queststakeamount, setqueststakeamount] = useState()
     const [boughtQUESTsuccessAlert, setboughtQUESTSuccessAlert] = useState(false)
     const [stakeQUESTsuccessAlert, setstakeQUESTSuccessAlert] = useState(false)
+    const [connectWallet, setConnectWallet] = useState(true)
+    const [connectedWallet, setConnectedWallet] = useState(false)
     const closeBuyAlert = () => {
     setboughtQUESTSuccessAlert(false)
     }
     const closeStakeAlert = () => {
         setstakeQUESTSuccessAlert(false)
-        }
-         
+        }     
+    const disconnectWallet = () => {
+      setConnectedWallet(false)
+      setConnectWallet(true)
+    }  
 
     useEffect(() => {
         AOS.init();
@@ -2111,6 +2116,8 @@ export default function Staking() {
          const walletAddress = accounts[0]; 
          const provider = new ethers.providers.Web3Provider(ethereum);
          const signer = provider.getSigner(walletAddress);
+         setConnectWallet(false);
+         setConnectedWallet(true);
          const getETHalance =  await GoerliBaseRPC.getBalance(walletAddress);
          const getETHBalanceInEther = ethers.utils.formatEther(getETHalance);
          document.getElementById("ETHbalance").innerHTML = getETHBalanceInEther
@@ -2118,7 +2125,6 @@ export default function Staking() {
          const getQTKBalanceInEther = ethers.utils.formatEther(getQTKbalance);
          document.getElementById("QTKbalance").innerHTML = getQTKBalanceInEther
           }
-        connectwallet();
  
     return (
         <>
@@ -2128,7 +2134,10 @@ export default function Staking() {
    </Head>
         <div className="p-[5%] pb-[60%] bg-[#234]">
         <div className="lg:text-[140%] md:text-[130%] text-[120%] font-[500]"><Link href="/"><i className="fa fa-caret-left"></i> &nbsp; <span style={{textShadow:"2px 2px #000"}}>RETURN</span></Link></div>
-        <div className="text-center mt-[5%]"><span className="bg-[#00c] px-[0.5cm] py-[0.3cm] font-[600] rounded-md">Connect Wallet</span></div>
+        <div className="text-center mt-[5%]">
+          {connectWallet ? (<span className="bg-[#00c] px-[0.5cm] py-[0.3cm] font-[600] rounded-md cursor-pointer" onClick={connectwallet}>Connect Wallet</span>) : (<div></div>)}
+          {connectedWallet ? (<span className="bg-[#070] px-[0.5cm] py-[0.3cm] font-[600] rounded-md cursor-pointer" onClick={disconnectWallet}>Connected</span>) : (<div></div>)}
+          </div>
         <div className="text-center lg:text-[120%] md:text-[120%] mt-[5%] lg:px-[10%] md:px-[10%]">Ensure you have <span className="text-[#d7b644]">$QTK</span> in your wallet and connect wallet to stake. <br></br>
         By staking $QTK, you own a Quest Labs NFT with which you can make proposals and make decisions in the ecosystem.</div>
         <div className="mt-[2%] text-center lg:text-[120%] md:text-[120%] text-[#bbb] font-[500]">$QTK Total supply: <span id="QTKtotalsupplycontainer"></span></div>

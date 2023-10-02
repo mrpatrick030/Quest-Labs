@@ -11,6 +11,28 @@ export default function Profile() {
         AOS.init();
       }, [])
 
+      const [connectWallet, setConnectWallet] = useState(true)
+      const [connectedWallet, setConnectedWallet] = useState(false)
+      const disconnectWallet = () => {
+        setConnectedWallet(false)
+        setConnectWallet(true)
+      } 
+
+          //To connect wallet 
+        const { ethers } = require("ethers");    //first require ethers 
+        const connectwallet = async () => {
+        const ethereum = (window).ethereum;
+        const accounts = await ethereum.request({
+             method: "eth_requestAccounts",
+         })
+          // first account in MetaMask
+         const walletAddress = accounts[0]; 
+         const provider = new ethers.providers.Web3Provider(ethereum);
+         const signer = provider.getSigner(walletAddress);
+         setConnectWallet(false);
+         setConnectedWallet(true);
+          }
+
     return (
         <>
    <Head>
@@ -21,7 +43,12 @@ export default function Profile() {
         <div className="p-[5%] profilebackground" style={{backgroundImage:"url(images/bg3.jpg)", backgroundSize:"100%", backgroundPositionY:"90%"}}>
         <div className="lg:text-[140%] md:text-[130%] text-[120%] font-[500]"><Link href="/"><i className="fa fa-caret-left"></i> &nbsp; <span style={{textShadow:"2px 2px #000"}}>RETURN</span></Link></div>
             <div className="pt-[4%]"><i className="fa fa-user-circle lg:text-[450%] md:text-[400%] text-[300%]"></i></div>
-            <div className="mt-[0.7cm]"><span className="bg-[#00c] px-[0.5cm] py-[0.2cm] font-[600] rounded-md">Connect Wallet</span></div>
+            <div className="mt-[0.7cm]">
+            <span>
+            {connectWallet ? (<span className="bg-[#00c] px-[0.5cm] py-[0.3cm] font-[600] rounded-md cursor-pointer" onClick={connectwallet}>Connect Wallet</span>) : (<div></div>)}
+          {connectedWallet ? (<span className="bg-[#070] px-[0.5cm] py-[0.3cm] font-[600] rounded-md cursor-pointer" onClick={disconnectWallet}>Connected</span>) : (<div></div>)}
+            </span>
+            </div>
         </div>
         <div className="bg-[#234] p-[5%]">
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-8">

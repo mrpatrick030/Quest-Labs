@@ -17,6 +17,28 @@ export default function Profile() {
         AOS.init();
       }, [])
 
+      const [connectWallet, setConnectWallet] = useState(true)
+      const [connectedWallet, setConnectedWallet] = useState(false)
+      const disconnectWallet = () => {
+        setConnectedWallet(false)
+        setConnectWallet(true)
+      } 
+
+          //To connect wallet 
+        const { ethers } = require("ethers");    //first require ethers 
+        const connectwallet = async () => {
+        const ethereum = (window).ethereum;
+        const accounts = await ethereum.request({
+             method: "eth_requestAccounts",
+         })
+          // first account in MetaMask
+         const walletAddress = accounts[0]; 
+         const provider = new ethers.providers.Web3Provider(ethereum);
+         const signer = provider.getSigner(walletAddress);
+         setConnectWallet(false);
+         setConnectedWallet(true);
+          }
+
     return (
         <>
    <Head>
@@ -25,7 +47,11 @@ export default function Profile() {
    </Head>
         <div className="p-[5%] bg-[#234]">
         <div>
-        <div><Link className="lg:text-[140%] md:text-[130%] text-[120%] font-[500]" href="/"><i className="fa fa-caret-left"></i> &nbsp; <span style={{textShadow:"2px 2px #000"}}>RETURN</span></Link> <span className="bg-[#00c] px-[0.5cm] py-[0.2cm] font-[500] rounded-md float-right">Connect Wallet</span></div>
+        <div><Link className="lg:text-[140%] md:text-[130%] text-[120%] font-[500]" href="/"><i className="fa fa-caret-left"></i> &nbsp; <span style={{textShadow:"2px 2px #000"}}>RETURN</span></Link> <span className="float-right">
+          {connectWallet ? (<span className="bg-[#00c] px-[0.5cm] py-[0.3cm] font-[600] rounded-md cursor-pointer" onClick={connectwallet}>Connect Wallet</span>) : (<div></div>)}
+          {connectedWallet ? (<span className="bg-[#070] px-[0.5cm] py-[0.3cm] font-[600] rounded-md cursor-pointer" onClick={disconnectWallet}>Connected</span>) : (<div></div>)}
+          </span>
+        </div>
         <div className="mt-[1cm]" style={{borderBottom:"2px solid #d7b644"}}></div>
         </div>
 

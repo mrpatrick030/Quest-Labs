@@ -5,7 +5,7 @@ export default function ThirdSection() {
         <div className="rounded-xl p-[5%]" style={{backgroundImage:"url(images/bg19.jpg)"}}>
         <div><span className="lg:text-[200%] md:text-[180%] text-[150%] font-[600]">Quest Labs &nbsp; &nbsp;</span><span className="px-[0.3cm] py-[0.1cm] rounded-md bg-[#222]">Mainnet</span></div>
         <div className="mt-[3%] lg:mr-[25%] md:mr-[20%] text-[110%] lg:text-[130%] md:text-[120%]">
-        Build dApps with exceptional UX, all while relying on Ethereum's unrivaled security, with our
+        DApp built with exceptional UX, all while relying on Ethereum's unrivaled security, with our
          high-performance Ethereum layer-2 network built with modular architecture.
         </div>
         <div className="mt-[5%]"><span className="p-[0.2cm] rounded-md bg-[#111]" style={{border:"2px solid #fff"}}>Build on Quest Labs</span></div>

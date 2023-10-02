@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function SeventhSection() {
     return (
         <div className="p-[5%]">
@@ -5,19 +7,19 @@ export default function SeventhSection() {
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
             <div className="grid-cols-1 px-[8%] pt-[10%] pb-[20%] rounded-xl socialcols1">
              <div><span className="px-[0.5cm] py-[0.3cm] bg-[rgba(0,0,0,0.8)] rounded-md">Twitter</span></div>
-             <div className="mt-[0.5cm] text-center"><i className="fab fa-twitter text-[350%]"></i></div>
+             <div className="mt-[0.5cm] text-center"><Link href="https://twitter.com"><i className="fab fa-twitter text-[350%]"></i></Link></div>
             </div>
             <div className="grid-cols-1 px-[8%] pt-[10%] pb-[20%] rounded-xl socialcols2">
              <div><span className="px-[0.5cm] py-[0.3cm] bg-[rgba(0,0,0,0.8)] rounded-md">Telegram</span></div>
-             <div className="mt-[0.5cm] text-center"><i className="fab fa-telegram text-[350%]"></i></div>
+             <div className="mt-[0.5cm] text-center"><Link href="https://telegram.org"><i className="fab fa-telegram text-[350%]"></i></Link></div>
             </div>
             <div className="grid-cols-1 px-[8%] pt-[10%] pb-[20%] rounded-xl socialcols3">
              <div><span className="px-[0.5cm] py-[0.3cm] bg-[rgba(0,0,0,0.8)] rounded-md">Discord</span></div>
-             <div className="mt-[0.5cm] text-center"><i className="fab fa-discord text-[350%]"></i></div>
+             <div className="mt-[0.5cm] text-center"><Link href="https://discord.com"><i className="fab fa-discord text-[350%]"></i></Link></div>
             </div>
             <div className="grid-cols-1 px-[8%] pt-[10%] pb-[20%] rounded-xl socialcols4">
              <div><span className="px-[0.5cm] py-[0.3cm] bg-[rgba(0,0,0,0.8)] rounded-md">LinkedIn</span></div>
-             <div className="mt-[0.5cm] text-center"><i className="fab fa-linkedin text-[350%]"></i></div>
+             <div className="mt-[0.5cm] text-center"><Link href="https://linkedin.com"><i className="fab fa-linkedin text-[350%]"></i></Link></div>
             </div>
             </div>
         </div>

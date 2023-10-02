@@ -2116,14 +2116,20 @@ export default function Staking() {
          const walletAddress = accounts[0]; 
          const provider = new ethers.providers.Web3Provider(ethereum);
          const signer = provider.getSigner(walletAddress);
-         setConnectWallet(false);
-         setConnectedWallet(true);
-         const getETHalance =  await GoerliBaseRPC.getBalance(walletAddress);
-         const getETHBalanceInEther = ethers.utils.formatEther(getETHalance);
-         document.getElementById("ETHbalance").innerHTML = getETHBalanceInEther
-         const getQTKbalance =  await QuestTokenContractReadSettings.balanceOf(walletAddress);
-         const getQTKBalanceInEther = ethers.utils.formatEther(getQTKbalance);
-         document.getElementById("QTKbalance").innerHTML = getQTKBalanceInEther
+         try {
+          const readQuestTokenTotalsupply = await QuestTokenContractReadSettings.totalSupply();
+          setConnectWallet(false);
+          setConnectedWallet(true);
+          const getETHalance =  await GoerliBaseRPC.getBalance(walletAddress);
+          const getETHBalanceInEther = ethers.utils.formatEther(getETHalance);
+          document.getElementById("ETHbalance").innerHTML = getETHBalanceInEther
+          const getQTKbalance =  await QuestTokenContractReadSettings.balanceOf(walletAddress);
+          const getQTKBalanceInEther = ethers.utils.formatEther(getQTKbalance);
+          document.getElementById("QTKbalance").innerHTML = getQTKBalanceInEther
+         }
+         catch (error){
+          alert("Check your network or ensure a wallet is installed on your device")
+         }
           }
  
     return (

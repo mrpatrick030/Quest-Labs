@@ -7,6 +7,14 @@ export default function ProjectHeader(){
   const handleClick = () => {
     setActive(!active);
   };
+
+  const [marketplaceAlert, setmarketplaceAlert] = useState(false)
+  const openMarketplaceAlert = () => {
+    setmarketplaceAlert(true)
+    }
+  const closeMarketplaceAlert = () => {
+    setmarketplaceAlert(false)
+  }
     return (
       <nav className='flex items-center flex-wrap px-[5%]' style={{background:"rgba(0,0,0,0.7)"}}>
       <div id="logo">
@@ -63,8 +71,24 @@ export default function ProjectHeader(){
             </Link>
             </span>
 
+            <span style={{transition:"1s ease-in-out"}} className="rounded-md">
+            <Link href='#' onClick={handleClick && openMarketplaceAlert}  className='lg:inline-flex lg:w-auto w-full px-4 rounded-full text-[#eee] items-center justify-center headeranchors'>
+              <span className="headeranchorsinnerspan">Marketplace</span>
+            </Link>
+            </span>
+
         </div>
       </div>
+      {marketplaceAlert ? 
+        (<div>
+        <div data-aos="flip-up" className="m-[auto] fixed top-5 right-0 bg-[rgba(0,0,0,1)] text-white px-4 py-3 rounded-md" style={{transition:"1s ease-in-out"}}>
+        <span className="text-[#d7b644]">In Progress !!!</span> &nbsp; &nbsp;
+        <button><i className="fa fa-times-circle text-[130%] font-[600]" onClick={closeMarketplaceAlert}></i></button>
+        </div>
+        </div>
+        ) : 
+        (<div></div>)
+        }
     </nav>
 
     );

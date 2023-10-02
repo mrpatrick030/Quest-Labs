@@ -23,7 +23,7 @@ This Artist Based DAO is a great way for fans of art to support their favorite a
 
 **Additional Notes**
 
-* The Quest Labs DAO contract is based on the OpenZeppelin Governance contract, which is a well-tested and secure contract.
+* The Quest Labs DAO contract is based on the OpenZeppelin Governance contract, which is a well-tested and secure contract. You can find the smart contracts on the smart_contract branch of this repository.
 * The QuestNFT is a non-fungible token (NFT) that represents your membership in the DAO.
 * The Quest Tokens $QTK are ERC-20 tokens that can be traded on exchanges.
 * The Quest Labs DAO is still under development, but it has the potential to become a powerful tool for supporting artists and the art world.

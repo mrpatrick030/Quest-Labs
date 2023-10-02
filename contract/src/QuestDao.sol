@@ -36,9 +36,9 @@ contract QuestDao is Governor, GovernorSettings, GovernorCountingSimple, Governo
         _;
     }
 
-    function joinDao(uint8 _age, string memory _name, string memory _email, uint _id) public {
+    function joinDao(uint8 _age, string memory _username, string memory _bio, uint _id) public {
         require (_nft.balanceOf(msg.sender) > 0, "Get the QNFT");
-        MemberInfo memory info = MemberInfo(_age,_name, _email, msg.sender, _id);
+        MemberInfo memory info = MemberInfo(_age,_username, _bio, msg.sender, _id);
         _members.push(info);
     }
 

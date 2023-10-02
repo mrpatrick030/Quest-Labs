@@ -9,7 +9,7 @@ contract QuestTokenContract is ERC20, ERC20Permit, ERC20Votes {
     constructor() ERC20("QuestToken", "QTK") ERC20Permit("QuestTokenPermit") {}
 
     function mint() public payable {
-        require (msg.value >= 0.05 ether, "Not Enough Eth");
+        require (msg.value >= 0.005 ether, "Not Enough Eth");
         payable(address(this)).transfer(msg.value);
         _mint(msg.sender, 1000 * (10 ** 18));
     }

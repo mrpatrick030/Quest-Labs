@@ -2156,7 +2156,7 @@ export default function Staking() {
                 <div className="mt-[3%]">Balance: <span id="ETHbalance"></span></div>
                 <input className="py-[0.2cm] text-[#fff] w-[100%] mt-[3%] rounded-md outline-none bg-[#111]" placeholder="0.00" type="text" id="ethamount" name="ethamount" value={ethamount} onChange={(e) => setethamount(e.target.value)}/>
             </div>
-            <button type="submit" onClick={(e) => {e.preventDefault(); WriteToContractToBuyQUEST(ethamount)}} className="w-[100%] bg-[#000] mt-[3%] p-[0.2cm] rounded-md">Buy</button>
+            <button type="submit" onClick={(e) => {e.preventDefault(); WriteToContractToBuyQUEST(ethamount)}} className="w-[100%] bg-[#000] mt-[3%] p-[0.2cm] rounded-md actionbutton" style={{transition:"1s ease-in-out"}}>Buy</button>
             </form>
         </div>
         <div className="grid grid-cols-1 p-[5%]">
@@ -2167,7 +2167,7 @@ export default function Staking() {
                 <div className="mt-[3%]">Balance: <span id="QTKbalance"></span></div>
                 <input className="py-[0.2cm] text-[#fff] w-[100%] mt-[3%] rounded-md outline-none bg-[#111]" type="text" id="queststakeamount" name="queststakeamount" value="1000" onChange={(e) => setqueststakeamount(e.target.value)}/>
             </div>
-            <button type="submit" onClick={(e) => {e.preventDefault(); WriteToContractToStakeQUEST(queststakeamount)}} className="w-[100%] bg-[#000] mt-[3%] p-[0.2cm] rounded-md">Stake</button>
+            <button type="submit" onClick={(e) => {e.preventDefault(); WriteToContractToStakeQUEST(queststakeamount)}} className="w-[100%] bg-[#000] mt-[3%] p-[0.2cm] rounded-md actionbutton" style={{transition:"1s ease-in-out"}}>Stake</button>
             </form>
         </div>
         </div>

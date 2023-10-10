@@ -74,5 +74,11 @@ body{background:#000; color:#eee}
  .daomenuitems{transition: 1s ease-in-out;cursor:pointer;}
  .daomenuitems:hover{background-color: rgba(0,0,0,0.5);}
 
+ @media screen and (min-width:620px) {
+   .thirdsectionbackgroundimage{background-size: 100%;}
+ }
+
+ .actionbutton:hover{background-color: #002;}
+
 
   

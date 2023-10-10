@@ -847,7 +847,7 @@ export default function CreateProposal() {
         <label className="bg-[rgba(0,0,0,0.8)] px-[0.4cm] py-[0.2cm] rounded-md" style={{}}>Proposal Description</label>
         <div className="mt-[0.4cm]"><input type="text" className="py-[0.2cm] outline-none w-[100%] bg-[rgba(0,0,0,0)] placeholder-[#aaa]" id="description" name="description" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Please give your proposal a description" style={{borderBottom:"2px solid #ddd"}} /></div>
         </div>
-        <button type="submit" onClick={(e) => {e.preventDefault(); WriteToContractToCreateProposal(description)}} className="w-[100%] mt-[10%] px-[0.4cm] py-[0.2cm] bg-[#000] cursor-pointer rounded-md lg:text-[120%] md:text-[110%] text-center font-[500]">Create Proposal</button>
+        <button type="submit" onClick={(e) => {e.preventDefault(); WriteToContractToCreateProposal(description)}} className="w-[100%] mt-[10%] px-[0.4cm] py-[0.2cm] bg-[#000] cursor-pointer rounded-md lg:text-[120%] md:text-[110%] text-center font-[500] actionbutton" style={{transition:"1s ease-in-out"}}>Create Proposal</button>
         </form>
         </div>
         {createProposalSuccessAlert ? 

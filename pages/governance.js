@@ -413,7 +413,7 @@ export default function Profile() {
             <div className="mt-[0.7cm]"><Link href="#joindao"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("joindaodisplaycomponent")}>Join DAO</span></Link></div>
             <div className="mt-[0.6cm]"><Link href="#createaproposal"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("createaproposaldisplaycomponent")}>Create a New Proposal</span></Link></div>
             <div className="mt-[0.6cm]"><Link href="#voteforaproposal"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("voteforproposaldisplaycomponent")}>Vote for a Proposal</span></Link></div>
-            {/* <div className="mt-[0.6cm]"><Link href="#proposals"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("proposalsdisplaycomponent")}>Proposals</span></Link></div> */}
+            <div className="mt-[0.6cm]"><Link href="#proposals"><span className="px-[0.4cm] py-[0.25cm] rounded-md bg-[#002] daomenuitems" onClick={() => changedisplay("proposalsdisplaycomponent")}>Proposals</span></Link></div>
             </div>
         </div>
 
@@ -423,7 +423,7 @@ export default function Profile() {
          {renderComponent === "joindaodisplaycomponent" && <JoinDao />}
          {renderComponent === "createaproposaldisplaycomponent" && <CreateProposal />}
          {renderComponent === "voteforproposaldisplaycomponent" && <VoteForProposal />}
-         {/* {renderComponent === "proposalsdisplaycomponent" && <Proposals />} */}
+         {renderComponent === "proposalsdisplaycomponent" && <Proposals />}
          
         </div>
         </div>

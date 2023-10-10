@@ -842,7 +842,7 @@ export default function JoinDao() {
         <label className="bg-[rgba(0,0,0,0.8)] px-[0.4cm] py-[0.2cm] rounded-md" style={{}}>NFT ID</label>
         <div className="mt-[0.4cm]"><input type="text" className="py-[0.2cm] outline-none w-[100%] bg-[rgba(0,0,0,0)] placeholder-[#aaa]" id="nftid" name="nftid" value={nftid} onChange={(e) => setnftid(e.target.value)} placeholder="Input the unique ID of your Quest Labs NFT" style={{borderBottom:"2px solid #ddd"}} /></div>
         </div>
-        <button type="submit" onClick={(e) => {e.preventDefault(); WriteToContractToJoinDAO(age, username, bio, nftid)}} className="w-[100%] mt-[10%] px-[0.4cm] py-[0.2cm] bg-[#000] cursor-pointer rounded-md lg:text-[120%] md:text-[110%] text-center font-[500]">Join DAO</button>
+        <button type="submit" onClick={(e) => {e.preventDefault(); WriteToContractToJoinDAO(age, username, bio, nftid)}} className="w-[100%] mt-[10%] px-[0.4cm] py-[0.2cm] bg-[#000] cursor-pointer rounded-md lg:text-[120%] md:text-[110%] text-center font-[500] actionbutton" style={{transition:"1s ease-in-out"}}>Join DAO</button>
         </form>
         </div>
         {joinQuestLabsDAOsuccessAlert ? 

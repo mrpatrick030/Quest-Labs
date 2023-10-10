@@ -29,5 +29,5 @@ This Artist Based DAO is a great way for fans of art to support their favorite a
 * The Quest Labs DAO is still under development, but it has the potential to become a powerful tool for supporting artists and the art world.
 
 **Team Members**
-Patrick Ominisan - Blockchain engineer
-Faith Roberts - Smart contract engineer
+* Patrick Ominisan - Blockchain engineer
+* Faith Roberts - Smart contract engineer
